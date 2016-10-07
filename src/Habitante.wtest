@@ -1,0 +1,23 @@
+import Habitante.*
+import Equipo.*
+import Fuerza.*
+import Suceso.*
+
+object fixture {
+	method anakin() = new Maestro(100, 80, 27700, new LadoLuminoso(), new Equipo(250))
+	method vader() = new Maestro(100, 80, 27700, new LadoOscuro(), new Equipo(250))
+	method abandono() = new Suceso(-2000) 	
+	method arrepentimiento() = new Suceso(5000) 	
+}
+
+test "testAnakinPasaAlLadoOscuro" {
+	var anakin = fixture.anakin()
+	anakin.vivirSuceso(fixture.abandono())
+	assert.equals("Fuerza.LadoOscuro", anakin.ladoFuerza().className())
+}
+
+test "testVaderPasaAlLadoLuminoso" {
+	var darthVader = fixture.vader()
+	darthVader.vivirSuceso(fixture.arrepentimiento())
+	assert.equals("Fuerza.LadoLuminoso", darthVader.ladoFuerza().className())
+}
