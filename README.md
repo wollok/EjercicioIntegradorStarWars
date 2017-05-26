@@ -6,19 +6,19 @@
 ![](http://i.imgur.com/mml6T1h.jpg)
 Revisando antiguos pergaminos encontramos información sobre los más variados seres que se distribuían en los innumerables planetas del universo.
 
-###Planetas y sus habitantes
+### Planetas y sus habitantes
 Cuando un planeta entra en guerra, si bien hay soldados entrenados para combatir, todos sus habitantes deben estar preparados y ser capaces de desplegar todo su poder. El poder de cualquier habitante de un planeta se calcula como su propia valentía más su inteligencia. En el caso de los soldados (como los stormtrooper, los droides y los clones), se le suma la potencia de todas las armas u otros elementos que conforman su equipamiento (pistolas, granadas, guantes, etc). 
 
-###Maestros
+### Maestros
 Además, en los planetas también hay otros personajes que son conocidos como maestros, que poseen una gran concentración de midiclorianos en su cuerpo. Ellos tienen control sobre la Fuerza, la cual es tan poderosa como peligrosa, y pueden utilizarla de diferentes maneras: A quienes siguen el lado luminoso de la Fuerza y la usan para el bien del universo se les llama Jedi, mientras que se conoce como Sith a los que siguen su lado oscuro, utilizándola para causar daño o buscar inescrupulosamente su beneficio personal. Todo maestro tiene un sable de luz que sabe manejar con destreza y precisión.
 
-###Jedi
+### Jedi
 Los Jedi son honorables caballeros con gran disciplina y sabiduría. Su poder es calculado como su valentía más su inteligencia, a lo que se le suma la milésima parte de la cantidad de midiclorianos en su cuerpo y la potencia que le otorga su sable de luz, que es equivalente a la energía misma del sable por el tiempo que el maestro Jedi lleva en el lado de la luz.
 
-###Sith
+### Sith
 Los Sith, corrompidos por la codicia y la ira, solo buscan el poder y no importa cuales sean los medios necesarios para llegar a su objetivo, lo harán despiadadamente. Su poder es similar al de un Jedi, con la diferencia que la potencia de su sable de luz se calcula como el doble de la energía propia del sable, más el tiempo que lleva siendo Sith. 
 
-###Sucesos importantes
+### Sucesos importantes
 “El miedo es el camino hacia el Lado Oscuro: 
 el miedo lleva a la ira, la ira lleva al odio, el odio lleva al sufrimiento.”
 
@@ -28,13 +28,13 @@ Un maestro Jedi empieza con una paz interior alta y cada suceso importante que v
 
 Los maestros Sith van acumulando odio interno con los sucesos que van viviendo. Sin importar la carga emocional de cada uno, su odio aumenta un 10% en cada suceso importante que vive, excepto que el suceso tenga una carga emocional muy grande (mayor a su odio) en cuyo caso la coraza de su corazón se rompe y puede ver el camino de destrucción que ha dejado y que le espera, arrepintiéndose de sus actos, convirtiéndose en un Jedi y de esta manera pasar al camino de la luz.
 
-###Requerimientos:
+### Requerimientos:
 Desarrollar los métodos que permitan:
 - Calcular el poder de un planeta, que es la suma del poder de todos los que lo habitan. 
 - Saber si un planeta posee una orden, lo cual sucede si con solo los 3 habitantes más poderosos (probablemente maestros) logra obtener mayor o igual poder que la mitad del poder del planeta.
 - Representar qué le sucede a un maestro al vivir cualquier suceso importante. 
 
-###Probar la siguiente secuencia argumental
+### Probar la siguiente secuencia argumental
 
 “Corrompido por el lado oscuro, el joven Skywalker ha sido. 
 el muchacho que adiestraste desaparecido ha… consumido, por Darth Vader”
