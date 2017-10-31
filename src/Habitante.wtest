@@ -3,13 +3,12 @@ import Equipo.*
 import Fuerza.*
 import Suceso.*
 
-describe "tests" {
+describe "Tests de Star Wars"{
 
-	const anakin = new Maestro(100, 80, 27700, new LadoLuminoso(), new Equipo(250))
-	const vader = new Maestro(100, 80, 27700, new LadoOscuro(), new Equipo(250))
-	const abandono = new Suceso(-2000) 	
-	const arrepentimiento = new Suceso(5000) 	
-
+var anakin = new Maestro(100, 80, 27700, new LadoLuminoso(), new Equipo(250))
+var darthVader = new Maestro(100, 80, 27700, new LadoOscuro(), new Equipo(250))
+var abandono = new Suceso(-2000) 	
+var arrepentimiento = new Suceso(5000) 	
 
 test "testAnakinPasaAlLadoOscuro" {
 	anakin.vivirSuceso(abandono)
@@ -17,8 +16,8 @@ test "testAnakinPasaAlLadoOscuro" {
 }
 
 test "testVaderPasaAlLadoLuminoso" {
-	vader.vivirSuceso(arrepentimiento)
-	assert.equals("Fuerza.LadoLuminoso", vader.ladoFuerza().className())
+	darthVader.vivirSuceso(arrepentimiento)
+	assert.equals("Fuerza.LadoLuminoso", darthVader.ladoFuerza().className())
 }
 
 }
