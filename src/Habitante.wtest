@@ -22,5 +22,13 @@ test "testVaderPasaAlLadoLuminoso" {
 	darthVader.vivirSuceso(arrepentimiento)
 	assert.equals("Fuerza.LadoLuminoso", darthVader.ladoFuerza().className())
 }
+test "test poder vader sin sucesos" {
+	
+	assert.equals(707.7, darthVader.poder())
+}
+test "test poder anakin sin sucesos" {
+	
+	assert.equals(207.7, anakin.poder())
+}
 
 }
