@@ -1,4 +1,3 @@
-
 class Habitante {
 
 	const inteligencia
@@ -10,8 +9,10 @@ class Habitante {
 	}
 	
 	method poder() {
-		return valentia + inteligencia
+		return valentia + inteligencia + self.poderDeClase()
 	}
+	
+	method poderDeClase() = return 0
 
 }
 
@@ -23,8 +24,8 @@ class Soldado inherits Habitante {
 		equipo = _equipo
 	}
 	
-	override method poder() {
-		return super() + self.potenciaEquipamiento()	
+	override method poderDeClase() {
+		return self.potenciaEquipamiento()	
 	}
 
 	method potenciaEquipamiento() {
@@ -54,8 +55,8 @@ class Maestro inherits Habitante {
 		return ladoFuerza
 	}
 	
-	override method poder() {
-		return super() + midiclorianos / 1000 + ladoFuerza.potenciaDe(sableDeLuz)
+	override method poderDeClase() {
+		return midiclorianos / 1000 + ladoFuerza.potenciaDe(sableDeLuz)
 	}
 
 	method vivirSuceso(suceso) {
