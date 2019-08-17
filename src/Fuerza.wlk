@@ -20,6 +20,8 @@ class LadoOscuro inherits Fuerza {
 	
 	var odio = 1000
 	
+	method descripcion() = "Lado Oscuro"
+	
 	method aumentarOdio() {
 		odio = odio * 1.1	
 	}
@@ -40,6 +42,8 @@ class LadoOscuro inherits Fuerza {
 class LadoLuminoso inherits Fuerza {
 	
 	var pazInterior = 1000
+
+	method descripcion() = "Lado Luminoso"
 	
 	method alterarPazInterior(valor) {
 		pazInterior = pazInterior + valor	
@@ -59,4 +63,10 @@ class LadoLuminoso inherits Fuerza {
 		return sable.potencia() * antiguedad	
 	}
 
+}
+
+class Suceso {
+
+	const property cargaEmocional
+	
 }

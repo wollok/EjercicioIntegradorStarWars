@@ -1,12 +1,7 @@
-
 class Planeta {
 
 	var habitantes
 	
-	constructor(_habitantes) {
-		habitantes = _habitantes
-	}
-
 	method poder() {
 		return self.poderDe(habitantes) 	
 	}
