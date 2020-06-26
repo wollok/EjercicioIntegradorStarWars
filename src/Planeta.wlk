@@ -1,9 +1,9 @@
 class Planeta {
 
-	var habitantes
+	const habitantes = []
 	
 	method poder() {
-		return self.poderDe(habitantes) 	
+		return habitantes.sum{ habitante => habitante.poder() }	
 	}
 
 	method masPoderosos() {
@@ -16,11 +16,7 @@ class Planeta {
 	}
 
 	method poderMasPoderosos() {
-		return self.poderDe(self.masPoderosos())	
-	}
-
-	method poderDe(grupoDeHabitantes) {
-		return grupoDeHabitantes.sum{ habitante => habitante.poder() }	
+		return self.masPoderosos().sum{ habitante => habitante.poder() }	
 	}
 
 }

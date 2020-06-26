@@ -1,3 +1,4 @@
+import Equipo.*
 
 class Habitante {
 
@@ -12,16 +13,21 @@ class Habitante {
 
 class Soldado inherits Habitante {
 
-	var equipo
+	const equipamiento = []
 	
 	override method poder() {
 		return super() + self.potenciaEquipamiento()	
 	}
 
 	method potenciaEquipamiento() {
-		return equipo.sum { arma => arma.potencia() } 
+		return equipamiento.
+			filter({ eq=> eq.esUtil()}).
+			sum({ eq => eq.potencia()}) 
 	} 
-
+	
+	method tomar(algo){
+		equipamiento.add(algo)
+	}
 }
 
 class Maestro inherits Habitante {

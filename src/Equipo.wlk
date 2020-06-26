@@ -1,14 +1,18 @@
 
 class Equipo {
 	
-	const potencia
+	var property potencia
+	var property buenEstado = true
 	
-	constructor(_potencia) {
-		potencia = _potencia
+	method esUtil() {
+		 return potencia > 10 && buenEstado
 	}
-
-	method potencia() {
-		return potencia
+	
+	method reparar(){
+		buenEstado = true
+	}
+	method usar(){
+		buenEstado = false
 	}
 
 }
