@@ -1,10 +1,10 @@
 # The Forks Awakens
  
-[![Build Status](https://travis-ci.org/wollok/EjercicioIntegradorStarWars.svg?branch=master)](https://travis-ci.org/wollok/EjercicioIntegradorStarWars)
+[![build](https://github.com/wollok/EjercicioIntegradorStarWars/actions/workflows/ci.yml/badge.svg)](https://github.com/wollok/EjercicioIntegradorStarWars/actions/workflows/ci.yml)
 
 ## Ejercicio Integrador
 
-![](ForkJoinWars.jpg)
+![Star Wars](./img/ForkJoinWars.jpg)
 
 **Hace mucho tiempo, en una cursada muy muy lejana, antiguos programadores tuvieron la tarea de hacer un sistema para modelar la guerra que se avecinaba, pero su tarea quedó inconclusa. Sabemos que pronto la fuerza volverá a despertar y tenemos que estar listos para esto, por lo que necesitamos un sistema para recordar los sucesos y los protagonistas de esa antigua guerra.**
 

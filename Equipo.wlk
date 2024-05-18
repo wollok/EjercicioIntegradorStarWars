@@ -1,18 +1,14 @@
-
 class Equipo {
-	
 	var property potencia
 	var property buenEstado = true
 	
-	method esUtil() {
-		 return potencia > 10 && buenEstado
-	}
+	method esUtil() = (potencia > 10) && buenEstado
 	
-	method reparar(){
+	method reparar() {
 		buenEstado = true
 	}
-	method usar(){
+	
+	method usar() {
 		buenEstado = false
 	}
-
 }
